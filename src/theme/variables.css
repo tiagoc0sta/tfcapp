@@ -1,6 +1,10 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,6 +78,14 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-toolbar-background: #303030;
+  --ion-toolbar-color:#28e7e9;
+  
+  --ion-background-color: #6d6969;
+  
+  
+
 }
 
 @media (prefers-color-scheme: dark) {
