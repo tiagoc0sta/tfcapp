@@ -1,13 +1,17 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
+import React, { useState } from 'react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonMenu } from '@ionic/react';
 
 const Tab1: React.FC = () => {
+  const [text, setText] = useState<string>();
+  const [number, setNumber] = useState<number>();
+
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>CAR MAINTENANCE APP</IonTitle>
+        <IonToolbar color="primary">
+          <IonTitle class="ion-text-center">CAR MAINTENANCE APP</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -15,10 +19,10 @@ const Tab1: React.FC = () => {
           <IonToolbar>
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader >
         <ExploreContainer name="Tab 1 page" />
       </IonContent>
-    </IonPage >
+    </IonPage  >
   );
 };
 

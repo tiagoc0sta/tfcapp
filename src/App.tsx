@@ -56,13 +56,13 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonButton>Inic</IonButton>
+            <IonButton color="primary">Início</IonButton>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonButton>Prev</IonButton>
+            <IonButton color="primary">Manutenção</IonButton>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonButton>Hist</IonButton>
+            <IonButton color="primary">Histórico</IonButton>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
